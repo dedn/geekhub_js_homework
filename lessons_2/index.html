@@ -1,19 +1,41 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Document</title>
 </head>
 <body>
-<input type="text" name="text" id="text">
-<input type="radio" name="te" id="text2">
-<input type="checbox" name="text" id="text3">
-<input type="hidden" name="text" id="text4">
-<input type="password" name="tex" id="text5">
-<input type="text" name="tex" id="text6">
-<button id="submit">ok</button>
+<div class="container">
+    <form action="">
+        <fieldset class="short-information">
+            <legend>Shortly about myself</legend>
+            <label for="firstname">Name: </label><input type="text" name="letters" id="firstname"/>
+            <label for="lastname">Surname:</label><input type="text" name="letters" id="lastname"/>
+            <label for="age">Age</label><input type="text" name="numbers" id="age"/><label for="age"> лет</label>
+        </fieldset>
+        <fieldset class="more-information">
+            <legend>More about yourself</legend>
+            <input type="text" name="numbers" id="Date_of_Birth"/><label for="Date_of_Birth">Date of Birth</label>
+            <input type="text" name="letters" id="family_status"/><label for="family_status">Family status</label>
+            <input type="text" name="letters" id="location"/><label for="location">Location</label>
+        </fieldset>
+        <fieldset class="completed">
+            <legend>Make a choice and click</legend>
 
+            <input type="radio" name="type" value="first"/>
+            <input type="radio" name="type" value="second"/>
+            <input type="radio" name="type" value="last"/>
+            <p><input type="checkbox" name="agreement"/></p>
+        </fieldset>
+        <fieldset class="short-information">
+            <input id="check" type="text"/> <input id="checkbox" type="checkbox"/>
+        </fieldset>
+
+        <button type="submit">sent</button>
+    </form>
+</div>
 <script src="jquery-3.2.1.min.js"></script>
 <script src="js.js"></script>
+
 </body>
 </html>
