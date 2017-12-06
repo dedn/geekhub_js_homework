@@ -7,7 +7,7 @@
 <body>
 
 <h2>create user</h2>
-<form action="/create-user" method="POST">
+<form action="/create-user" method="POST" id="create-user">
     <p>
         <input type="text" name="phone">
     </p>
@@ -19,7 +19,7 @@
         <input type="radio" name="type" value="2">
         <input type="radio" name="type" value="3">
     </p>
-    <button type="submit">Submit</button>
+    <button  type="submit">Submit</button>
 </form>
 <h2>create friend</h2>
 <form action="/create-friend" method="POST">
@@ -29,11 +29,7 @@
 
     <button type="submit">Submit</button>
 </form>
-
+<script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/js.js"></script>
-<script
-        src="https://code.jquery.com/jquery-3.2.1.min.js"
-        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous"></script>
 </body>
 </html>
