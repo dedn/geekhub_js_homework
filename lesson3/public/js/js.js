@@ -1,11 +1,11 @@
 (function () {
 
-    var createUserForm = JQuery('#create-user')
+    var createUserForm = $('#create-user')
 
-    createUserForm.on('submit', function (e) {
+    createUserForm.on('submit', function (event) {
         event.preventDefault();
 
-        JQuery.ajax({
+        $.ajax({
             method:'POST',
             url:'/create-user',
             data:createUserForm.serialize(),
@@ -18,7 +18,7 @@
             }
         })
     })
-})
+})();
 
 
   // var createUserForm = JQuery('#create-user');
